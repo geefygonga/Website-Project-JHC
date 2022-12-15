@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!--Jack Kelly's work-->
+<html>
+	<head>
+		<title>Our Form</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/3811f767a6.js" crossorigin="anonymous"></script>
+		<script src="JS Scripts/validation.js" charset="utf-8"></script> 
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				<!--Harry Reilleys work-->
+                <!---- WORKING HOME BUTTON AND NAVBAR BUTTONS ---->
+                <a href="index.html"><img src="IMAGES/kisspng-book-fly-away-home-a-day-s-work-clip-art-open-book-5abbb684efde32.5106100215222513969825.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="game.html">Minigame</a></li>
+                    </ul>
+                </div>
+                <!---- BUTTON FOR ONlY DEVICES SET TO 700px ---->
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+			<!--Jack Kellys work-->
+			<form>
+				<label>Name:</label>
+				<input type="text" name="name" required/>
+				<br></br>
+				<label>School:</label>
+				<input type="text" required/>
+				<br></br>
+					
+				<p class="form">How long do you spend studying at home</p>
+				<label>1 hour or less</label>
+				<input name="time" type="radio" value="Less than an hour" />
+				<br>
+				<label>1 - 2 hours&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input name="time" type="radio" value="1-2 hours" />
+				<br>
+				<label>3 hours +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input name="time" type="radio" value="3 hours+" />
+						
+				<p class="form">What is the first thing you do before studying</p>
+				<label>Turn your phone off</label>
+				<input name="study space" type="Checkbox" value="Turn your phone off" />
+				<br>
+				<label>Get a drink &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </label>
+				<input name="study space" type="Checkbox" value="Get a drink" />
+				<br>
+				<label>Other&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input name="study space" type="Checkbox" value="Other" />
+						
+				<br></br>
+				<label>How do you study?</label>
+				<select>
+					<option>On your phone</option>
+					<option>On a laptop</option>
+					<option>Reading over notes</option>
+				</select>
+
+				<br></br>
+				<label>Tell us how you study!</label>
+				<input type="text" required/>
+				<br></br>
+			
+				<br></br>
+				<input type="submit" value="Submit" onclick="userData"/>
+				<br>
+				<input type="reset" value="reset" />
+			</form>
+		</section>
+		<!--Harry Reileys work-->
+		<!---- JAVASCRIPT FOR TOGGLE MENU ---->
+        <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+       		 navLinks.style.right = "0";
+        }
+        function hideMenu(){
+       		 navLinks.style.right = "-200px";
+        }
+		</script>
+	</body>
+</html>
